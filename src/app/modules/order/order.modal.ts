@@ -34,8 +34,12 @@ const productSchema = new Schema<TProduct>({
     type: Boolean,
     required: true,
   },
+  isDeleted: {
+    type: Boolean,
+    default: false
+  }
 });
 
 // Creating the Mongoose model
-export const Product = model('Product', productSchema);
+export const ProductModel = model('Product', productSchema);
 
