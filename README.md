@@ -2,8 +2,8 @@
 # Bi-Cycle store B4A2V4
 
 This project is an Express.js application developed with TypeScript that integrates MongoDB using Mongoose to manage a comprehensive Bicycle Store. The application is designed to streamline inventory management, handle customer orders, and calculate revenue while ensuring data integrity through robust schema validation.
-#### SERVER SIDE URL: https://bicycle-store-backend-node.vercel.app/
-#### Video Link: https://bicycle-store-backend-node.vercel.app/
+#### Live Deployment Link: https://bicycle-store-backend-eight.vercel.app/
+#### Video Explanation (Public Link): https://www.loom.com/share/b5bd3614a97f4c3bbe17d6f0d893cc17?sid=06075fcc-e08a-4bff-909b-b2cd108dcc26
 
 
 ## **Features**
@@ -82,3 +82,15 @@ This project is an Express.js application developed with TypeScript that integra
 #### **Calculate Revenue from Orders (Aggregation)**
 - Endpoint: /api/orders/revenue
 - Method: GET
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contributions
+Feel free to fork this repository, raise issues, and submit pull requests to contribute to this project.
+
+## Contact
+For queries, suggestions, or feedback, please contact:
+Nur Hossain Farid
+Email: faahsan1516@gmai.com
+GitHub: github.com/nurhossainfarid

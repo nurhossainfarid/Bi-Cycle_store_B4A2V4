@@ -81,7 +81,7 @@ const updateProduct = async (req: Request, res: Response) => {
     const result = await ProductServices.updateProductIntoDB(productId, updateData);
 
     res.status(200).json({
-      message: 'Bicycle retrieved successfully',
+      message: 'Bicycle updated successfully',
       status: true,
       data: result,
     })
