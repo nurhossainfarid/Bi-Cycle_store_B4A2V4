@@ -11,6 +11,7 @@ const createProduct = async (req: Request, res: Response) => {
       success: true,
       data: data,
     })
+       // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     if (error) {
       res.status(500).json({
@@ -33,6 +34,7 @@ const getAllProducts = async (req: Request, res: Response) => {
       status: true,
       data: data,
     })
+       // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     if (error) {
       res.status(500).json({
@@ -55,6 +57,7 @@ const getSpecificProduct = async (req: Request, res: Response) => {
       status: true,
       data: data,
     })
+       // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     if (error) {
       res.status(500).json({
@@ -78,6 +81,7 @@ const updateProduct = async (req: Request, res: Response) => {
       status: true,
       data: result,
     })
+       // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     if (error) {
       res.status(500).json({
@@ -100,6 +104,7 @@ const deleteProduct = async (req: Request, res: Response) => {
       status: true,
       data: data,
     })
+       // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     if (error) {
       res.status(500).json({
