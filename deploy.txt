@@ -1,0 +1,10 @@
+1. vercel
+- Vercel CLI
+    - for first time
+    Install 
+    npm i -g vercel
+    vercel -v
+    vercel login
+
+    -for every project
+    vercel --prod
