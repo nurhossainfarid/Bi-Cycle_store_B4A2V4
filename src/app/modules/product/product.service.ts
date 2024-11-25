@@ -9,8 +9,8 @@ const createProductIntoDB = async (product: TProduct) => {
 }
 
 // Get All products
-const getAllProductsFromDB = async () => {
-    const result = await ProductModel.find();
+const getAllProductsFromDB = async (searchTerm: object) => {
+    const result = await ProductModel.find(searchTerm);
     return result;
 }
 
@@ -22,13 +22,13 @@ const getSpecificProductFromDB = async (productId: string) => {
 
 // Update a product by id
 const updateProductIntoDB = async (productId: string, updateData: TUpdateProductData) => {
-    const result = await ProductModel.updateOne({ _id: productId}, {$set: updateData});
+    const result = await ProductModel.findByIdAndUpdate({ _id: productId}, {$set: updateData}, {new: true });
     return result;
 }
 
 // Delete a product by 
 const deleteProductFromDB = async (productId: string) => {
-    const result = await ProductModel.updateOne({ _id: productId}, {isDeleted: true});
+    const result = await ProductModel.deleteOne({ _id: productId});
     return result;
 }
 
