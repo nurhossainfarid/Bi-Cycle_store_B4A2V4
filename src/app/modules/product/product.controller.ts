@@ -1,6 +1,7 @@
 import { Request, Response } from 'express'
 import { ProductServices } from './product.service'
 
+// create product
 const createProduct = async (req: Request, res: Response) => {
   try {
     const productData = req.body
@@ -24,6 +25,7 @@ const createProduct = async (req: Request, res: Response) => {
   }
 }
 
+// get all products
 const getAllProducts = async (req: Request, res: Response) => {
   try {
     const searchTerm = req.query
@@ -47,6 +49,7 @@ const getAllProducts = async (req: Request, res: Response) => {
   }
 }
 
+// get a specific product by id
 const getSpecificProduct = async (req: Request, res: Response) => {
   try {
     const { productId } = req.params
@@ -70,6 +73,7 @@ const getSpecificProduct = async (req: Request, res: Response) => {
   }
 }
 
+// update a specific product by id
 const updateProduct = async (req: Request, res: Response) => {
   try {
     const { productId } = req.params;
@@ -94,6 +98,7 @@ const updateProduct = async (req: Request, res: Response) => {
   }
 }
 
+// delete product by id
 const deleteProduct = async (req: Request, res: Response) => {
   try {
     const { productId } = req.params

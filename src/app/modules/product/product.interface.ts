@@ -1,3 +1,4 @@
+// Product type
 export type TProduct = {
     name: string;
     brand: string;
@@ -8,6 +9,7 @@ export type TProduct = {
     inStock: boolean;
 }
 
+// Update Product Type 
 export type TUpdateProductData = {
     name?: string;
     brand?: string;
